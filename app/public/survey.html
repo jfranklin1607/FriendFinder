@@ -165,7 +165,7 @@
 		<hr>
 	    <footer class="footer">
 	      <div class="container">
-		  <p><a href="/api/friends">API Friends List</a> | <a href="git@github.com:lvanok/FriendFinder.git">GitHub Repo</a></p>
+		  <p><a href="/api/friends">API Friends List</a> | <a href="git@github.com:jfranklin1607/FriendFinder.git">GitHub Repo</a></p>
 	      </div>
 	    </footer>
 
@@ -183,7 +183,7 @@
 	      </div>
 	      <div class="modal-body">
 	        <h2 id="matchName"></h2>
-	        <img id="matchImg" src="file:///Users/lisavanorden/Documents/RCB_files/week13_files/wk13_hw/friendfinder/assets/images/floya_avatar_pic.jpg" alt="">
+	        <img id="matchImg" src="1e2f706d5a61b80349abde615858db0c.jpg" alt="">
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -234,7 +234,7 @@
 	    	// Grab the URL of the website
 	    	var currentURL = window.location.origin;
 	    	// AJAX post the data to the friends API. 
-	    	$.post(currentURL + "/api/friends", userData, function(data){
+	    	$.post(currentURL + "/app/data/friends.js", userData, function(data){
 	    		// Grab the result from the AJAX post so that the best match's name and photo are displayed.
 	    		$("#matchName").text(data.name);
 	    		$('#matchImg').attr("src", data.photo);
